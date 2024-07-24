@@ -24,29 +24,9 @@ Create a dedicated namespace for the Spark deployment.
 kubectl create namespace spark
 ```
 
-## Step 3: Create Values File for Custom Configuration
+## Step 3: Use the Provided Values File
 
-Create a values.yaml file to customize your Spark installation. Here’s an example configuration:
-
-```
-master:
-  replicaCount: 1
-  nodeSelector:
-    spark-role: master
-
-worker:
-  replicaCount: 2
-  nodeSelector:
-    spark-role: worker
-
-image:
-  registry: docker.io
-  repository: bitnami/spark
-  tag: 3.5.1-debian-12-r8
-
-imagePullSecrets:
-  - name: myregistrykey
-```
+Use the values.yaml file from the repository for custom configuration to deploy Apache Spark.
 
 > [!NOTE]
 > imagePullSecrets is necessary if you are using a private Docker registry or need to authenticate with Docker Hub.
