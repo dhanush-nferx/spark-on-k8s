@@ -63,7 +63,8 @@ kubectl port-forward svc/spark-master-svc -n spark 8080:80
 
 Open your browser and navigate to http://localhost:8080 to access the Spark UI.
 
-<img width="1680" alt="image" src="https://github.com/user-attachments/assets/6ab1fc2a-30ed-459e-acfe-fafc80c487da">
+![image](https://github.com/user-attachments/assets/fb4e6717-bc7b-4ae2-9c42-3a90ffe04d18)
+
 
 
 # Troubleshooting Common Issues and Solutions
